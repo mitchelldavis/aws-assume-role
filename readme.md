@@ -1,6 +1,8 @@
 aws-assume-role
 ===
 
+[![Build Status](https://travis-ci.org/mitchelldavis/aws-assume-role.svg?branch=master)](https://travis-ci.org/mitchelldavis/aws-assume-role)
+
 This tool can be used to assume a role in an AWS account.  I needed this tool because I would like to sepperate out Production and Development environments into separate AWS accounts.  If my continuous delivery solution is in my Development account, I need to be able to assume a role in the Production account in order to deploy my software.
 
 There are tools out there that export AWS credentials to the current shell, but I wanted a single executable. Python and shell scripts are hard to deal with in an environment where you are downloading your dependencies.
